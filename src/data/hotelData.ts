@@ -1,17 +1,17 @@
-import heroExterior from '../assets/images/hero_branol_exterior_1791220708132.jpg';
+import heroExterior from '../assets/images/hero_branol_exterior_1791220708132.png';
 import roomStandard from '../assets/images/room_branol_standard_1791220720497.jpg';
 import dineRestaurant from '../assets/images/dine_branol_restaurant_1791220732403.jpg';
 import meetConference from '../assets/images/meet_branol_conference_1791220745678.jpg';
 import roomBathroom from '../assets/images/room_branol_bathroom_1791220755855.jpg';
-import exploreLandscape from '../assets/images/explore_mwingi_landscape_1791220768508.jpg';
+import exploreLandscape from '../assets/images/explore_mwingi_landscape_1791220768508.png';
 
 // Property Site Photography
-import siteStayPavilion from '../assets/images/site_stay_pavilion_1791222530486.jpg';
-import siteDineCabana from '../assets/images/site_dine_cabana_1791222541718.jpg';
-import siteLobbyReception from '../assets/images/site_lobby_reception_1791222554419.jpg';
-import siteCorridorRooms from '../assets/images/site_corridor_rooms_1791222564765.jpg';
-import siteStaircasePlaque from '../assets/images/site_staircase_plaque_1791222574733.jpg';
-import siteMeetFoyer from '../assets/images/site_meet_foyer_1791222584910.jpg';
+import siteStayPavilion from '../assets/images/site_branol_stay_pavilion_1791222530486.jpg';
+import siteDineCabana from '../assets/images/site_branol_dine_cabana_1791222541718.jpg';
+import siteLobbyReception from '../assets/images/site_branol_lobby_reception_1791222554419.jpg';
+import siteCorridorRooms from '../assets/images/site_branol_corridor_rooms_1791222564765.jpg';
+import siteStaircasePlaque from '../assets/images/site_branol_staircase_plaque_1791222574733.jpg';
+import siteMeetFoyer from '../assets/images/site_branol_meet_foyer_1791222584910.jpg';
 
 export const BRANOL_INFO = {
   name: 'BRANOL HOTEL',
