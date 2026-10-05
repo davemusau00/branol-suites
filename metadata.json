@@ -1,0 +1,6 @@
+{
+  "name": "Branol Hotel Mwingi",
+  "description": "Branol Hotel in Mwingi, Kitui County. Contemporary rooms, restaurant dining, and executive conference spaces. Stay composed.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
