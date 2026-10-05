@@ -5,6 +5,14 @@ import meetConference from '../assets/images/meet_branol_conference_179122074567
 import roomBathroom from '../assets/images/room_branol_bathroom_1791220755855.jpg';
 import exploreLandscape from '../assets/images/explore_mwingi_landscape_1791220768508.jpg';
 
+// Property Site Photography
+import siteStayPavilion from '../assets/images/site_stay_pavilion_1791222530486.jpg';
+import siteDineCabana from '../assets/images/site_dine_cabana_1791222541718.jpg';
+import siteLobbyReception from '../assets/images/site_lobby_reception_1791222554419.jpg';
+import siteCorridorRooms from '../assets/images/site_corridor_rooms_1791222564765.jpg';
+import siteStaircasePlaque from '../assets/images/site_staircase_plaque_1791222574733.jpg';
+import siteMeetFoyer from '../assets/images/site_meet_foyer_1791222584910.jpg';
+
 export const BRANOL_INFO = {
   name: 'BRANOL HOTEL',
   location: 'Mwingi Town, Kitui County, Kenya',
@@ -14,7 +22,7 @@ export const BRANOL_INFO = {
   email: 'hello@branol.co.ke',
   tagline: 'STAY COMPOSED.',
   subtagline: 'A modern hotel in Mwingi.',
-  coordinates: { lat: -0.9351, lng: 38.0583 }, // Mwingi Town
+  coordinates: { lat: -0.9351, lng: 38.0583 },
 };
 
 export const IMAGES = {
@@ -24,7 +32,59 @@ export const IMAGES = {
   meetConference,
   roomBathroom,
   exploreLandscape,
+  // Property Site Photos
+  siteStayPavilion,
+  siteDineCabana,
+  siteLobbyReception,
+  siteCorridorRooms,
+  siteStaircasePlaque,
+  siteMeetFoyer,
 };
+
+export const SITE_SHOWCASE = [
+  {
+    id: 'stay-pavilion',
+    title: 'Outdoor Garden Pavilion',
+    category: 'STAY',
+    description: 'Arched white pavilions and slate walkways leading to quiet garden suites.',
+    image: siteStayPavilion,
+  },
+  {
+    id: 'dine-cabana',
+    title: 'Dine Garden Cabana',
+    category: 'DINE',
+    description: 'Private evening dining cabanas with woven lamps, curtains and ambient lighting.',
+    image: siteDineCabana,
+  },
+  {
+    id: 'lobby-reception',
+    title: 'Front Desk & Reception',
+    category: 'HOTEL',
+    description: 'Fluted wood reception desk with marble tops and warm welcome foyer.',
+    image: siteLobbyReception,
+  },
+  {
+    id: 'corridor-rooms',
+    title: 'Guest Rooms Corridor',
+    category: 'STAY',
+    description: 'Polished marble floor hallways with lit room signage and wood accents.',
+    image: siteCorridorRooms,
+  },
+  {
+    id: 'meet-foyer',
+    title: 'Conference & Events Foyer',
+    category: 'MEET',
+    description: 'Dedicated reception and break foyer for executive meeting delegates.',
+    image: siteMeetFoyer,
+  },
+  {
+    id: 'staircase-plaque',
+    title: 'Grand Staircase Lobby',
+    category: 'HOTEL',
+    description: 'Geometric black railings, marble stairs and copper B monogram plaque.',
+    image: siteStaircasePlaque,
+  },
+];
 
 export const ROOM_FACTS = [
   { label: 'CHECK-IN', value: '12:00 PM' },

@@ -24,12 +24,26 @@ import { ContactPage } from './components/ContactPage';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    return localStorage.getItem('branol_theme') === 'dark';
+  });
   const [bookingOpen, setBookingOpen] = useState<boolean>(false);
   const [quoteOpen, setQuoteOpen] = useState<boolean>(false);
   const [quotePackageName, setQuotePackageName] = useState<string>('Full Day Conference');
   const [staffPortalOpen, setStaffPortalOpen] = useState<boolean>(false);
 
-  // Dynamic Title Management for SEO & User Context
+  // Sync Dark Mode class with DOM
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('branol_theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('branol_theme', 'light');
+    }
+  }, [darkMode]);
+
+  // Dynamic Document Title Updates
   useEffect(() => {
     switch (activeTab) {
       case 'stay':
@@ -58,11 +72,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#1A1A1A] font-sans antialiased">
+    <div className="min-h-screen flex flex-col bg-[#FAF8F4] dark:bg-[#0F0F0F] text-[#1F1F1F] dark:text-[#EDE9E1] font-sans antialiased transition-colors duration-300">
       {/* Top Header Navigation */}
       <Header
         activeTab={activeTab}
         setActiveTab={setActiveTab}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
         onOpenBooking={() => setBookingOpen(true)}
         onOpenStaffPortal={() => setStaffPortalOpen(true)}
       />
