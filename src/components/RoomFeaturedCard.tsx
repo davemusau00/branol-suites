@@ -24,7 +24,7 @@ export const RoomFeaturedCard: React.FC<RoomFeaturedCardProps> = ({ onOpenBookin
   };
 
   const whatsappLink = `https://wa.me/${BRANOL_INFO.whatsapp}?text=${encodeURIComponent(
-    'Hello Branol Hotel, I would like to check availability for the Standard Room (KES 3,000/night).'
+    'Hello The Branol Hotel, I would like to check availability for the Standard Room (KES 3,000/night).'
   )}`;
 
   return (

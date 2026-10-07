@@ -14,11 +14,12 @@ import siteStaircasePlaque from '../assets/images/site_branol_staircase_plaque_1
 import siteMeetFoyer from '../assets/images/site_branol_meet_foyer_1791222584910.jpg';
 
 export const BRANOL_INFO = {
-  name: 'BRANOL HOTEL',
+  name: 'THE BRANOL HOTEL',
   location: 'Mwingi Town, Kitui County, Kenya',
   fullAddress: 'A3 Garissa Highway, Mwingi Town, Kitui County, Kenya',
-  phone: '+254 700 123 456',
-  whatsapp: '254700123456',
+  phone: '0781 768 611',
+  phoneSecondary: '0713 333 357',
+  whatsapp: '254781768611',
   email: 'hello@branol.co.ke',
   tagline: 'STAY COMPOSED.',
   subtagline: 'A modern hotel in Mwingi.',

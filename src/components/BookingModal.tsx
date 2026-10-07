@@ -61,7 +61,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hello Branol Hotel Mwingi,\n\nI would like to request a room reservation:\n` +
+    `Hello The Branol Hotel Mwingi,\n\nI would like to request a room reservation:\n` +
     `• Reference: ${bookingId}\n` +
     `• Name: ${fullName}\n` +
     `• Phone: ${phone}\n` +
@@ -91,7 +91,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
         <div className="bg-[#121212] text-white p-6 flex items-center justify-between border-b border-[#262626]">
           <div>
             <span className="text-[10px] tracking-[0.3em] uppercase text-[#B85228] font-semibold">
-              BRANOL HOTEL · MWINGI
+              THE BRANOL HOTEL · MWINGI
             </span>
             <h3 className="font-serif text-2xl font-normal text-white mt-0.5">
               Request Room Reservation
@@ -254,7 +254,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   Your request has been received.
                 </h4>
                 <p className="text-xs text-[#666] mt-1">
-                  Branol Hotel will confirm availability shortly. Reference:{' '}
+                  The Branol Hotel will confirm availability shortly. Reference:{' '}
                   <span className="font-mono font-semibold text-[#121212]">{bookingId}</span>
                 </p>
               </div>

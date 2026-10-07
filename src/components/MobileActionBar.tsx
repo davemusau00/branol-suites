@@ -11,7 +11,7 @@ export const MobileActionBar: React.FC<MobileActionBarProps> = ({ onOpenBooking 
     <div className="sm:hidden fixed bottom-0 left-0 right-0 z-30 bg-[#121212]/95 backdrop-blur-md border-t border-[#2A2A2A] px-2 py-2 flex items-center justify-around text-white shadow-2xl">
       {/* CALL Button */}
       <a
-        href={`tel:${BRANOL_INFO.phone}`}
+        href={`tel:${BRANOL_INFO.phone.replace(/\s/g, '')}`}
         className="flex-1 flex flex-col items-center justify-center py-1.5 text-center transition-colors hover:text-[#B85228]"
       >
         <Phone className="w-4 h-4 mb-0.5 text-[#B85228]" />
@@ -22,7 +22,7 @@ export const MobileActionBar: React.FC<MobileActionBarProps> = ({ onOpenBooking 
 
       {/* WHATSAPP Button */}
       <a
-        href={`https://wa.me/${BRANOL_INFO.whatsapp}?text=${encodeURIComponent('Hello Branol Hotel, I would like to enquire about room availability.')}`}
+          href={`https://wa.me/${BRANOL_INFO.whatsapp}?text=${encodeURIComponent('Hello The Branol Hotel, I would like to enquire about room availability.')}`}
         target="_blank"
         rel="noreferrer"
         className="flex-1 flex flex-col items-center justify-center py-1.5 text-center transition-colors hover:text-[#25D366]"

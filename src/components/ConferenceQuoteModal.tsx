@@ -70,7 +70,7 @@ export const ConferenceQuoteModal: React.FC<ConferenceQuoteModalProps> = ({
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hello Branol Hotel Mwingi,\n\nI would like to request a Conference Quote:\n` +
+    `Hello The Branol Hotel Mwingi,\n\nI would like to request a Conference Quote:\n` +
     `• Reference: ${quoteId}\n` +
     `• Organisation: ${organisation}\n` +
     `• Contact Person: ${contactPerson}\n` +

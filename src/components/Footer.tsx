@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </div>
                 <div>
                   <h2 className="font-serif text-3xl tracking-[0.2em] text-white leading-none">
-                    BRANOL
+                    THE BRANOL
                   </h2>
                   <p className="text-[10px] uppercase tracking-[0.35em] text-[#99938A] mt-1">
                     HOTEL · MWINGI
@@ -139,9 +139,14 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#B85228] shrink-0" />
-                <a href={`tel:${BRANOL_INFO.phone}`} className="hover:text-white transition-colors">
-                  {BRANOL_INFO.phone}
-                </a>
+                <div className="flex flex-col items-start">
+                  <a href={`tel:${BRANOL_INFO.phone.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
+                    {BRANOL_INFO.phone}
+                  </a>
+                  <a href={`tel:${BRANOL_INFO.phoneSecondary.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
+                    {BRANOL_INFO.phoneSecondary}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <MessageSquare className="w-4 h-4 text-[#25D366] shrink-0" />
@@ -151,7 +156,7 @@ export const Footer: React.FC<FooterProps> = ({
                   rel="noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  WhatsApp: +254 700 123 456
+                  WhatsApp: {BRANOL_INFO.phone}
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -179,7 +184,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Footer Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#736E67] gap-4">
           <div className="flex items-center gap-4">
-            <span>© {currentYear} Branol Hotel Mwingi. All rights reserved.</span>
+          <span>© {currentYear} The Branol Hotel Mwingi. All rights reserved.</span>
             <span>·</span>
             <button onClick={onOpenStaffPortal} className="hover:text-white transition-colors">
               Staff Portal

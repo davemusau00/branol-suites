@@ -130,7 +130,7 @@ export const ConferencePackagesSection: React.FC<ConferencePackagesSectionProps>
                 Fill out your event details. Our events coordinator will send a detailed proforma quotation directly to your email or WhatsApp.
               </p>
               <div className="pt-2 text-xs text-[#B85228] font-mono">
-                Direct Line: +254 700 123 456
+                Direct Line: {BRANOL_INFO.phone} / {BRANOL_INFO.phoneSecondary}
               </div>
             </div>
 

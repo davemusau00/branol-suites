@@ -47,22 +47,22 @@ export default function App() {
   useEffect(() => {
     switch (activeTab) {
       case 'stay':
-        document.title = 'Standard Rooms & Accommodation | Branol Hotel Mwingi';
+        document.title = 'Standard Rooms & Accommodation | The Branol Hotel Mwingi';
         break;
       case 'dine':
-        document.title = 'Restaurant & Lounge Menu | Branol Hotel Mwingi';
+        document.title = 'Restaurant & Lounge Menu | The Branol Hotel Mwingi';
         break;
       case 'meet':
-        document.title = 'Conference & Meeting Packages | Branol Hotel Mwingi';
+        document.title = 'Conference & Meeting Packages | The Branol Hotel Mwingi';
         break;
       case 'explore':
-        document.title = 'Explore Mwingi & Orientation | Branol Hotel Mwingi';
+        document.title = 'Explore Mwingi & Orientation | The Branol Hotel Mwingi';
         break;
       case 'contact':
-        document.title = 'Contact & Directions | Branol Hotel Mwingi';
+        document.title = 'Contact & Directions | The Branol Hotel Mwingi';
         break;
       default:
-        document.title = 'Branol Hotel | Rooms, Restaurant & Conferences in Mwingi';
+        document.title = 'The Branol Hotel | Rooms, Restaurant & Conferences in Mwingi';
     }
   }, [activeTab]);
 

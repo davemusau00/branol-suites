@@ -32,7 +32,7 @@ export const ContactPage: React.FC = () => {
           </h1>
 
           <p className="text-sm sm:text-base text-[#D6CEBE] font-light max-w-xl leading-relaxed">
-            Reach out directly to Branol Hotel Mwingi for reservations, room inquiries, conference bookings, or directions.
+            Reach out directly to The Branol Hotel in Mwingi for reservations, room inquiries, conference bookings, or directions.
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ export const ContactPage: React.FC = () => {
                   DIRECT CHANNELS
                 </span>
                 <h2 className="font-serif text-3xl font-normal text-[#121212] mt-1">
-                  Branol Hotel Contact Info
+                  The Branol Hotel Contact Info
                 </h2>
               </div>
 
@@ -64,9 +64,14 @@ export const ContactPage: React.FC = () => {
                   <Phone className="w-5 h-5 text-[#B85228] shrink-0" />
                   <div>
                     <span className="font-bold text-[#121212] block mb-0.5">PHONE DIRECT</span>
-                    <a href={`tel:${BRANOL_INFO.phone}`} className="text-[#B85228] hover:underline font-mono">
-                      {BRANOL_INFO.phone}
-                    </a>
+                    <div className="flex flex-col items-start gap-1">
+                      <a href={`tel:${BRANOL_INFO.phone.replace(/\s/g, '')}`} className="text-[#B85228] hover:underline font-mono">
+                        {BRANOL_INFO.phone}
+                      </a>
+                      <a href={`tel:${BRANOL_INFO.phoneSecondary.replace(/\s/g, '')}`} className="text-[#B85228] hover:underline font-mono">
+                        {BRANOL_INFO.phoneSecondary}
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -80,7 +85,7 @@ export const ContactPage: React.FC = () => {
                       rel="noreferrer"
                       className="text-[#25D366] hover:underline font-mono"
                     >
-                      +254 700 123 456
+                      {BRANOL_INFO.phone}
                     </a>
                   </div>
                 </div>

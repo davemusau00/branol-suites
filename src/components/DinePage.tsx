@@ -43,7 +43,7 @@ export const DinePage: React.FC = () => {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>BRANOL HOTEL MWINGI - RESTAURANT MENU</title>
+          <title>THE BRANOL HOTEL MWINGI - RESTAURANT MENU</title>
           <style>
             body { font-family: 'Times New Roman', serif; padding: 40px; color: #121212; line-height: 1.5; }
             h1 { font-size: 32px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 4px; }
@@ -57,7 +57,7 @@ export const DinePage: React.FC = () => {
           </style>
         </head>
         <body>
-          <h1>BRANOL HOTEL</h1>
+          <h1>THE BRANOL HOTEL</h1>
           <div class="subtitle">MWINGI · KITUI COUNTY · RESTAURANT MENU</div>
           ${categories
             .filter((c) => c !== 'All')
@@ -80,7 +80,7 @@ export const DinePage: React.FC = () => {
               `;
             })
             .join('')}
-          <div class="footer">BRANOL HOTEL MWINGI · TEL: +254 700 123 456 · STAY COMPOSED.</div>
+          <div class="footer">THE BRANOL HOTEL MWINGI · TEL: ${BRANOL_INFO.phone} / ${BRANOL_INFO.phoneSecondary} · STAY COMPOSED.</div>
         </body>
       </html>
     `);
